@@ -1,11 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect } from "react";
+import Header from "./components/Header";
 
 export default function Home() {
   useEffect(() => {
     document.documentElement.classList.add("dark");
   }, []);
-  return <section className="dark min-h-screen"></section>;
+  return (
+    <section className="dark min-h-screen">
+      <Header />
+    </section>
+  );
 }
