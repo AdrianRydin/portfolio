@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -10,6 +11,8 @@ export default function Home() {
   return (
     <section className="dark min-h-screen">
       <Header />
+      <main></main>
+      <Footer />
     </section>
   );
 }
